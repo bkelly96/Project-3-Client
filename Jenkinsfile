@@ -1,3 +1,11 @@
-Tessting
+Node{
+	stage("clone"){
+	"https://github.com/Project3VinayBatch/Project-3-Client", branch: 'master'
+	
+	}
 
-New thing to test
+	stage("build"){
+	sh "ng build -prod"
+	}
+	
+}
